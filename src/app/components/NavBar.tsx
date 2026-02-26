@@ -13,7 +13,6 @@ const navlinks = [
   { name: "About", path: "/about" },
   { name: "Services", path: "/services" },
   { name: "Training", path: "/training" },
-  { name: "Virtual Class Room", path: "/virtual-classroom" },
   { name: "Contact", path: "/contact" },
   { name: "Reviews", path: "/reviews" },
 ];
@@ -40,7 +39,7 @@ export default function NavBar() {
   return (
     <nav
       className={`fixed top-0 left-0 w-full z-50 transition-all duration-300
-        ${isScrolled ? "bg-white shadow-md py-3" : "bg-white py-4"}
+        ${isScrolled ? "bg-white shadow-md py-3" : " py-4"}
       `}
     >
       <div className="max-w-8xl mx-auto px-6 flex items-center justify-between">
@@ -48,20 +47,20 @@ export default function NavBar() {
           <Image
             src={Logo}
             alt="Acelab academy Logo"
-            width={120}
-            height={40}
+            width={150}
+            height={60}
             className="object-contain"
           />
         </Link>
-        <ul className="hidden lg:flex items-center gap-10 font-medium text-sm tracking-widest">
+        <ul className="hidden lg:flex items-center gap-10 font-Bold text-xl tracking-widest">
           {navlinks.map((link) => (
             <li key={link.name}>
               <button
                 onClick={() => handleNavClick(link.path)}
                 className={`relative uppercase transition
                   ${pathname === link.path
-                    ? "text-blue-600 after:absolute after:-bottom-2 after:left-0 after:w-full after:h-[2px] after:bg-blue-600"
-                    : "text-slate-700 hover:text-blue-600"
+                    ? "text-blue-400 after:absolute after:-bottom-2 after:left-0 after:w-full after:h-[2px] after:bg-blue-400"
+                    : "text-slate-700 hover:text-blue-400"
                   }
                 `}
               >

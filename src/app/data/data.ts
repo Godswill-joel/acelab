@@ -8,7 +8,12 @@ import testimony7 from "../../../public/assets/images/9.png";
 import testimony8 from "../../../public/assets/images/10.png";
 import testimony9 from "../../../public/assets/images/13.png";
 import testimony10 from "../../../public/assets/images/12.png";
-import testimony11 from "../../../public/assets/images/114.png";
+import testimony11 from "../../../public/assets/images/14.png";
+import CEO from "../../../public/assets/images/CEO.png";
+import manager from "../../../public/assets/images/manager.png";
+import STO from "../../../public/assets/images/sto.png";
+import Poster from "../../../public/assets/images/poster.png";
+import consultant from "../../../public/assets/images/consultant.png"
 import Testimonial1 from "../../../public/assets/images/Testimonial1.png";
 import Testimonial2 from "../../../public/assets/images/Testimonial2.png";
 import Testimonial3 from "../../../public/assets/images/Testimonial3.png";
@@ -80,4 +85,53 @@ type TestimonialImage = {
   { id: 8, src: testimony8.src, alt: "Testimonial 8" },
   { id: 9, src: testimony9.src, alt: "Testimonial 9" },
   { id: 10, src: testimony10.src, alt: "Testimonial 10" },
+  { id: 11, src: testimony11.src, alt: "Testimonial 11" },
+];
+
+export const executiveTeam = [
+  {
+    id: "Engr. Oyama Osam",
+    name: "Engr. Oyama Osam",
+    role: "Founder, CEO & CTO",
+    image: CEO ,
+    linkedin: "https://linkedin.com/in/alexleishman",
+    about:
+      "Alex founded River to make Bitcoin accessible with top-tier security and transparency. His background in aerospace engineering and software has shaped River’s focus on precision and innovation.",
+  },
+  {
+    id: "Donald Ogar",
+    name: "Donald Ogar",
+    role: "Chief Operating Officer",
+    image: manager,
+    linkedin: "https://linkedin.com/in/juliaduzon",
+    about:
+      "Julia drives River’s operational strategy and ensures that client success remains at the core of every product and service decision.",
+  },
+  {
+    id: "Engr. Elvis Iweriebor",
+    name: "Engr. Elvis Iweriebor",
+    role: "Chief Financial Officer",
+    image: STO,
+    linkedin: "https://linkedin.com/in/davidmiller",
+    about:
+      "Bill leads River’s finance and risk management efforts, bringing over 15 years of experience in digital asset investment and financial strategy.",
+  },
+  {
+    id: "Engr. Rex Kalada",
+    name: "Engr. Rex Kalada",
+    role: "Chief Product Officer",
+    image: Poster,
+    linkedin: "https://linkedin.com/in/davidmiller",
+    about:
+      "James Page is the Chief Product Officer at River. In this role, James is responsible for driving product strategy and managing River's product management and design teams.",
+  },
+  {
+    id: "Arjun Murali",
+    name: "Arjun Murali",
+    role: "Chief Security Officer",
+    image: consultant,
+    linkedin: "https://linkedin.com/in/davidmiller",
+    about:
+      "Cem is the Chief Security Officer at River, where he oversees the security of all systems. He is an information security & cryptography professional with 25 years of experience in risk management for online services and fintech.",
+  },
 ];

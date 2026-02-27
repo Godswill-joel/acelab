@@ -13,9 +13,9 @@ const navlinks = [
   { name: "About", path: "/about" },
   {
     name: "Courses",
-    path: "/courses",
+    path: "/marineElectricalEngineeringTraining",
     children: [
-      { name: "Marine Electrical Engineering Training", path: "/courses/marineElectricalEngineeringTraining" },
+      { name: "Marine Electrical Engineering Training", path: "/marineElectricalEngineeringTraining" },
       { name: "Automation and Control ", path: "/courses/automationControl" },
       { name: "Troubleshooting industrial control systems ", path: "/courses/safety" },
     ],

@@ -82,7 +82,7 @@ export default function Footer() {
                                 className="w-full object-contain"
                             />
                             <p className="text-xs text-center text-gray-700 mt-2">
-                                NABTEB Accredited
+                                Accredited By  NABTEB
                             </p>
                         </div>
 
@@ -93,7 +93,7 @@ export default function Footer() {
                                 className="w-full object-contain"
                             />
                             <p className="text-xs text-center text-gray-700 mt-2">
-                                Federal Ministry of Labour & Employment
+                                Accredited By Federal Ministry of Labour & Employment
                             </p>
                         </div>
 
@@ -104,7 +104,7 @@ export default function Footer() {
                                 className="w-full object-contain"
                             />
                             <p className="text-xs text-center text-gray-700 mt-2">
-                                Industrial Training Fund
+                                Accredited By Industrial Training Fund
                             </p>
                         </div>
 
@@ -115,7 +115,7 @@ export default function Footer() {
                                 className="w-full object-contain"
                             />
                             <p className="text-xs text-center text-gray-700 mt-2">
-                                NSITF Compliant
+                                Accredited By NSITF Compliant
                             </p>
                         </div>
                     </div>

@@ -1,6 +1,7 @@
 "use client";
 
 import { useEffect, useState } from "react";
+import Link from "next/link";
 import TestimonialCard from "./testimonialcard";
 import { testimonials } from "../data/data";
 
@@ -12,7 +13,7 @@ export default function TestimonialSection() {
       setCurrentIndex((prev) =>
         prev === testimonials.length - 1 ? 0 : prev + 1
       );
-    }, 5000); 
+    }, 5000);
 
     return () => clearInterval(interval);
   }, []);
@@ -32,7 +33,9 @@ export default function TestimonialSection() {
           </div>
 
           <button className="mt-6 md:mt-0 bg-blue-400 text-white px-6 py-3 rounded-md hover:bg-blue-700 transition">
-            View All Testimonials
+            <Link href="/testimonial" className="block w-full h-full">
+              View All Testimonials
+            </Link>
           </button>
         </div>
 
@@ -40,9 +43,8 @@ export default function TestimonialSection() {
           {testimonials.map((testimonial, index) => (
             <div
               key={testimonial.id}
-              className={`transition-opacity duration-700 ${
-                index === currentIndex ? "opacity-100" : "opacity-0 hidden"
-              }`}
+              className={`transition-opacity duration-700 ${index === currentIndex ? "opacity-100" : "opacity-0 hidden"
+                }`}
             >
               <TestimonialCard testimonial={testimonial} />
             </div>
@@ -53,11 +55,10 @@ export default function TestimonialSection() {
             <button
               key={index}
               onClick={() => setCurrentIndex(index)}
-              className={`h-3 w-3 rounded-full transition ${
-                index === currentIndex
+              className={`h-3 w-3 rounded-full transition ${index === currentIndex
                   ? "bg-blue-400"
                   : "bg-gray-300 hover:bg-gray-400"
-              }`}
+                }`}
             />
           ))}
         </div>

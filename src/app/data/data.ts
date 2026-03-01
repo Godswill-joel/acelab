@@ -135,3 +135,146 @@ export const executiveTeam = [
       "Cem is the Chief Security Officer at River, where he oversees the security of all systems. He is an information security & cryptography professional with 25 years of experience in risk management for online services and fintech.",
   },
 ];
+
+type CourseTopic = {
+  id: string;
+  title: string;
+  description?: string;
+  outline: string[];
+};
+
+
+export const marineCourseTopics: CourseTopic[] = [
+  {
+    id: "1",
+    title: "Electrical,Electronic & Control Engineering at Operational Level",
+    description:"At the end of the course, you are expected to demonstrate knowledge, have a detailed understanding and proficiency in the following:", 
+    outline: [
+      "Overview of marine electrical architecture",
+      "AC vs DC systems on vessels",
+      "Basic electrical safety onboard",
+      "Marine electrical standards & compliance",
+    ],
+  },
+  {
+    id: "2",
+    title: "Monitor the Operation of Automatic Control Systems of Propulsion & Auxilliary Machinery",
+    description:"At the end of the course, you are expected to demonstrate knowledge, have a detailed understanding and proficiency in the following:",
+    outline: [
+      "Generators and alternators",
+      "Switchboards and distribution panels",
+      "Load sharing and power management",
+      "Emergency power systems",
+    ],
+  },
+  {
+    id: "3",
+    title: "Fundamentals of electronics and Power Electronics ",
+    description:"At the end of the course, you are expected to demonstrate knowledge, have a detailed understanding and proficiency in the following:",
+    outline: [
+      "Star-delta starters",
+      "Soft starters",
+      "Variable Frequency Drives (VFDs)",
+      "Marine motor protection methods",
+    ],
+  },
+  {
+    id: "4",
+    title: "Operation & Maintenance of Power Systems in Excess of 1,000 Volts",
+    description:"At the end of the course, you are expected to demonstrate knowledge, have a detailed understanding and proficiency in the following:",
+    outline: [
+      "Radar and GPS systems",
+      "ECDIS overview",
+      "Internal communication systems",
+      "Troubleshooting nav electronics",
+    ],
+  },
+  {
+    id: "5",
+    title: "Computer Operation & Networks on Ship",
+    description:"At the end of the course, you are expected to demonstrate knowledge, have a detailed understanding and proficiency in the following:",
+    outline: [
+      "PLC basics for marine applications",
+      "Sensor & actuator integration",
+      "Alarm & monitoring systems",
+      "Basic fault diagnostics",
+    ],
+  },
+  {
+    id: "6",
+    title: "Operation of All Internal Communication Systems on Board",
+    description:"At the end of the course, you are expected to demonstrate knowledge, have a detailed understanding and proficiency in the following:",
+    outline: [
+      "Fault-finding techniques",
+      "Insulation testing",
+      "Preventive maintenance schedules",
+      "Real-world case studies",
+    ],
+  },
+  {
+    id: "7",
+    title: "Maintenance & Repair of Electrical & Electronic Equipment",
+    description:"At the end of the course, you are expected to demonstrate knowledge, have a detailed understanding and proficiency in the following:",
+    outline: [
+      "Fault-finding techniques",
+      "Insulation testing",
+      "Preventive maintenance schedules",
+      "Real-world case studies",
+    ],
+  },
+  {
+    id: "8",
+    title: "Maintenance/Repair of Automation & Control Systems of Main Propulsion & Auxilliary Machinery",
+    description:"At the end of the course, you are expected to demonstrate knowledge, have a detailed understanding and proficiency in the following:",
+    outline: [
+      "Fault-finding techniques",
+      "Insulation testing",
+      "Preventive maintenance schedules",
+      "Real-world case studies",
+    ],
+  },
+  {
+    id: "9",
+    title: "Maintenance/Repair of Bridge Navigation equipment & Ship Communication Systems",
+    description:"At the end of the course, you are expected to demonstrate knowledge, have a detailed understanding and proficiency in the following:",
+    outline: [
+      "Fault-finding techniques",
+      "Insulation testing",
+      "Preventive maintenance schedules",
+      "Real-world case studies",
+    ],
+  },
+  {
+    id: "10",
+    title: "Maintenance & Repair of Electrical, Electronic & Control Systems of Deck Machinery & Cargo Handling Equipment",
+    description:"At the end of the course, you are expected to demonstrate knowledge, have a detailed understanding and proficiency in the following:",
+    outline: [
+      "Fault-finding techniques",
+      "Insulation testing",
+      "Preventive maintenance schedules",
+      "Real-world case studies",
+    ],
+  },
+  {
+    id: "11",
+    title: "Maintenance/Repair of Control & Safety Systems of Hotel Equipment",
+    description:"At the end of the course, you are expected to demonstrate knowledge, have a detailed understanding and proficiency in the following:",
+    outline: [
+      "Fault-finding techniques",
+      "Insulation testing",
+      "Preventive maintenance schedules",
+      "Real-world case studies",
+    ],
+  },
+  {
+    id: "12",
+    title: " Troubleshooting Bridge Equipment & Engine Room Control Systems",
+    description:"At the end of the course, you are expected to demonstrate knowledge, have a detailed understanding and proficiency in the following:",
+    outline: [
+      "Fault-finding techniques",
+      "Insulation testing",
+      "Preventive maintenance schedules",
+      "Real-world case studies",
+    ],
+  },
+];

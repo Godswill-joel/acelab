@@ -14,7 +14,6 @@ export default function MarineElectricalTraining() {
   return (
     <section className="bg-white py-24 px-6">
       <div className="max-w-6xl mx-auto">
-        {/* Header */}
         <div className="text-center mb-20">
           <h2 className="text-3xl md:text-5xl font-bold mb-4">
             Marine Electrical Engineering Training

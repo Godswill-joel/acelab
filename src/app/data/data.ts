@@ -278,3 +278,62 @@ export const marineCourseTopics: CourseTopic[] = [
     ],
   },
 ];
+
+type CoursesTopic = {
+  id: string;
+  title: string;
+  outline: string[];
+};
+
+export const automationControl: CoursesTopic[] = [
+  {
+    id: "1",
+    title: "Introduction to Marine Electrical Systems",
+    outline: [
+      "Overview of marine electrical architecture",
+      "AC vs DC systems on vessels",
+      "Basic electrical safety onboard",
+      "Marine electrical standards & compliance",
+    ],
+  },
+  {
+    id: "2",
+    title: "Marine Power Generation & Distribution",
+    outline: [
+      "Generators and alternators",
+      "Switchboards and distribution panels",
+      "Load sharing and power management",
+      "Emergency power systems",
+    ],
+  },
+  {
+    id: "3",
+    title: "Motor Control & Drives",
+    outline: [
+      "Star-delta starters",
+      "Soft starters",
+      "Variable Frequency Drives (VFDs)",
+      "Marine motor protection methods",
+    ],
+  },
+  {
+    id: "4",
+    title: "Navigation & Communication Systems",
+    outline: [
+      "Radar and GPS systems",
+      "ECDIS overview",
+      "Internal communication systems",
+      "Troubleshooting nav electronics",
+    ],
+  },
+  {
+    id: "5",
+    title: "Marine Automation & Control",
+    outline: [
+      "PLC basics for marine applications",
+      "Sensor & actuator integration",
+      "Alarm & monitoring systems",
+      "Basic fault diagnostics",
+    ],
+  },
+];

@@ -26,7 +26,6 @@ export default function BespokeServices({
               />
             </div>
 
-            {/* 📝 Content */}
             <div>
               <h2 className="text-xl md:text-2xl font-semibold italic text-gray-800 mb-4">
                 {title}

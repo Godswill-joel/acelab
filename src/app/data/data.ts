@@ -96,7 +96,7 @@ export const executiveTeam = [
     image: CEO ,
     linkedin: "https://linkedin.com/in/alexleishman",
     about:
-      "Alex founded River to make Bitcoin accessible with top-tier security and transparency. His background in aerospace engineering and software has shaped River’s focus on precision and innovation.",
+      "Engr. oyama osam is a (Reg. Engineer-Coren) MSc.EE, IPMA-UK, IEC-UK ETO Class 1, Marine Warranty Surveyor.",
   },
   {
     id: "Donald Ogar",
@@ -105,7 +105,7 @@ export const executiveTeam = [
     image: manager,
     linkedin: "https://linkedin.com/in/juliaduzon",
     about:
-      "Julia drives River’s operational strategy and ensures that client success remains at the core of every product and service decision.",
+      "Donald Ogar drives MSc. Reservoir Dev & prod.",
   },
   {
     id: "Engr. Elvis Iweriebor",
@@ -114,7 +114,7 @@ export const executiveTeam = [
     image: STO,
     linkedin: "https://linkedin.com/in/davidmiller",
     about:
-      "Bill leads River’s finance and risk management efforts, bringing over 15 years of experience in digital asset investment and financial strategy.",
+      "Engr. Elvis Iweriebor is a  (Reg. Engineer-COREN) and our Snr. Technical Superintendent/Accessor.",
   },
   {
     id: "Engr. Rex Kalada",

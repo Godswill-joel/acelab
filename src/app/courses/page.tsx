@@ -2,7 +2,6 @@
 
 import Image from "next/image";
 import { motion } from "framer-motion";
-import MarineElectricalTraining from "./marineElectricalTraining";
 
 export default function courses() {
   return (
@@ -43,7 +42,7 @@ export default function courses() {
           <div className="w-16 h-[3px] bg-blue-400 mx-auto mt-6 rounded-full" />
         </div>
       </div>
-      <MarineElectricalTraining />
+
     </section>
   );
 }

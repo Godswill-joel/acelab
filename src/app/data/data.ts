@@ -509,6 +509,7 @@ export const marineCourses = [
   "Industrial Control System Troubleshooting",
 ];
 
+
 // export const contactInfos = [
 //   {
 //     id: "email",

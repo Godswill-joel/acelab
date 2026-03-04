@@ -30,21 +30,12 @@ export default function AutomationControl() {
 
           {/* Content */}
           <div className="relative z-10 h-full flex flex-col items-center justify-center text-center px-6">
-            <h1 className="text-3xl sm:text-4xl md:text-6xl lg:text-7xl font-bold text-white mb-6 leading-tight">
-              PLC & SCADA Programming Series
+            <h1 className="text-3xl sm:text-4xl md:text-6xl lg:text-7xl font-bold text-blue-400 mb-6 leading-tight">
+              PLC & SCADA <span className="text-white">Programming</span> Series
             </h1>
-
-            <p className="text-gray-200 max-w-3xl text-base sm:text-lg md:text-xl leading-relaxed">
-              A structured, hands-on curriculum designed to build real-world marine
-              electrical engineering competence. Each topic expands into practical
-              learning outcomes.
-            </p>
           </div>
         </div>
-
-        {/* Tree Container */}
         <div className="relative">
-          {/* Vertical timeline (hidden on small screens) */}
           <div className="absolute left-1/2 top-0 h-full w-[2px] bg-gray-200 hidden md:block" />
 
           <div className="space-y-12 sm:space-y-16 md:space-y-20">
@@ -60,7 +51,6 @@ export default function AutomationControl() {
                 >
                   {/* Timeline dot (desktop only) */}
                   <div className="hidden md:block absolute left-1/2 -translate-x-1/2 w-4 h-4 lg:w-5 lg:h-5 bg-blue-500 rounded-full z-10" />
-
                   {/* Card */}
                   <div
                     className={`w-full md:w-[46%] bg-gray-50 border border-gray-200 rounded-2xl p-5 sm:p-6 md:p-7 shadow-sm transition hover:shadow-md ${isLeft ? "md:mr-auto" : "md:ml-auto"

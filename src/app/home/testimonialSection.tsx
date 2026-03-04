@@ -1,8 +1,9 @@
 "use client";
 
-import { useEffect, useState } from "react";
 import Link from "next/link";
 import Image from "next/image";
+import { motion } from "framer-motion";
+import { useEffect, useState } from "react";
 import { testimonialImages } from "../data/data";
 
 export default function TestimonialSection() {
@@ -39,38 +40,28 @@ export default function TestimonialSection() {
           </button>
         </div>
 
-        <div className="relative  flex items-center justify-center h-[280px]  mx-auto sm:h-[340px] md:h-[400px] lg:h-[500px]  overflow-hidden">
-          {testimonialImages.map((item, index) => (
-            <div
-              key={item.id}
-              className={`absolute inset-0 transition-opacity p-4 bg-white-500 duration-700 ease-in-out ${index === currentIndex ? "opacity-100" : "opacity-0"
-                }`}
-            >
-              <Image
-                src={item.src}
-                alt={item.alt}
-                fill
-                priority={index === currentIndex}
-                className="object-contain rounded-2xl"
-              />
-            </div>
-          ))}
-        </div>
-
-
-        {/* Dots */}
-        <div className="flex justify-center mt-8 gap-2">
-          {testimonialImages.map((_, index) => (
-            <button
-              key={index}
-              onClick={() => setCurrentIndex(index)}
-              className={`h-3 w-3 rounded-full transition ${index === currentIndex
-                ? "bg-blue-400 scale-110"
-                : "bg-gray-300 hover:bg-gray-400"
-                }`}
-            />
-          ))}
-        </div>
+        {/* ===== SIMPLE HORIZONTAL SCROLL SECTION ===== */}
+        <div className="flex overflow-x-auto gap-6 py-4 scrollbar-hide">
+                    {testimonialImages.map((item, index) => (
+                        <motion.div
+                            key={item.id}
+                            initial={{ opacity: 0, y: 20 }}
+                            whileInView={{ opacity: 1, y: 0 }}
+                            transition={{ duration: 0.5, delay: index * 0.1 }}
+                            className="flex-shrink-0 w-72 sm:w-80 md:w-96 rounded-2xl bg-white shadow-lg overflow-hidden"
+                        >
+                            <div className="relative h-72 sm:h-80 md:h-96 p-4">
+                                <Image
+                                    src={item.src}
+                                    alt={item.alt}
+                                    fill
+                                    className="object-contain"
+                                    sizes="(max-width: 768px) 100vw, 25vw"
+                                />
+                            </div>
+                        </motion.div>
+                    ))}
+                </div>
       </div>
     </section>
   );

@@ -3,7 +3,6 @@
 import { useEffect, useState } from "react";
 import Link from "next/link";
 import Image from "next/image";
-import TestimonialCard from "./testimonialcard";
 import { testimonialImages } from "../data/data";
 
 export default function TestimonialSection() {

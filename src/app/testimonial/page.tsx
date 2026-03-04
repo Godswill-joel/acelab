@@ -2,94 +2,89 @@
 
 import Image from "next/image";
 import { motion } from "framer-motion";
-import { useEffect, useState } from "react";
 import { testimonialImages } from "../data/data";
 
+import {
+  Carousel,
+  CarouselContent,
+  CarouselItem,
+  CarouselNext,
+  CarouselPrevious,
+} from "@/components/ui/carousel";
+
+import { Card, CardContent } from "@/components/ui/card";
 
 export default function TestimonialSection() {
-    const [currentIndex, setCurrentIndex] = useState(0);
+  return (
+    <section className="bg-[#eef3f3] py-16 md:py-24">
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-10">
 
-    useEffect(() => {
-        const interval = setInterval(() => {
-            setCurrentIndex((prev) =>
-                prev === testimonialImages.length - 1 ? 0 : prev + 1
-            );
-        }, 7000);
+        {/* ===== HERO HEADER SECTION ===== */}
+        <div className="relative h-[350px] md:h-[450px] rounded-2xl overflow-hidden mb-16">
+          <Image
+            src="/images/marine-eto-bg.jpg"
+            alt="Marine Electro Technical Officer Training"
+            fill
+            priority
+            className="object-cover"
+          />
 
-        return () => clearInterval(interval);
-    }, []);
+          <div className="absolute inset-0 bg-black/50 flex items-center justify-center px-6">
+            <div className="text-center max-w-5xl">
 
-    return (
-        <section className="bg-[#eef3f3] py-16 md:py-24">
-            <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-10">
-                <div className="relative z-10 h-full flex items-center justify-center px-6">
-                    <Image
-                        src="/images/marine-eto-bg.jpg"
-                        alt="Marine Electro Technical Officer Training"
-                        fill
-                        priority
-                        className="object-cover"
-                    />
-                    <div className="flex flex-col md:flex-row md:items-center md:justify-between mb-12">
+              <motion.h1
+                initial={{ y: -30, opacity: 0 }}
+                animate={{ y: 0, opacity: 1 }}
+                transition={{ duration: 1 }}
+                className="text-3xl sm:text-5xl md:text-6xl font-bold text-blue-400 mb-4"
+              >
+                Testimonials
+              </motion.h1>
 
-                        <div className="text-center max-w-5xl">
-                            {/* Title */}
-                            <motion.h1
-                                initial={{ y: -30, opacity: 0 }}
-                                animate={{ y: [0, -12, 0], opacity: 1 }}
-                                transition={{
-                                    duration: 1.4,
-                                    ease: "easeInOut",
-                                    repeat: Infinity,
-                                    repeatDelay: 4,
-                                }}
-                                className="text-2xl sm:text-4xl md:text-6xl lg:text-7xl font-bold text-blue-400 leading-tight mb-4"
-                            >
-                                Testimoines
-                            </motion.h1>
-                            <p className="text-sm sm:text-base md:text-lg text-gray-200 max-w-3xl mx-auto">
-                                Hear what our Previous Students
-                            </p>
+              <p className="text-sm sm:text-base md:text-lg text-gray-200 max-w-3xl mx-auto">
+                Hear what our previous students have to say about their
+                experience with us.
+              </p>
 
-                            {/* Divider */}
-                            <div className="w-16 h-[3px] bg-blue-400 mx-auto mt-6 rounded-full" />
-                        </div>
-                    </div>
-
-                </div>
-                <div className="relative  flex items-center justify-center h-[280px]  mx-auto sm:h-[340px] md:h-[400px] lg:h-[500px]  overflow-hidden">
-                    {testimonialImages.map((item, index) => (
-                        <div
-                            key={item.id}
-                            className={`absolute inset-0 transition-opacity p-4 bg-white-500 duration-700 ease-in-out ${index === currentIndex ? "opacity-100" : "opacity-0"
-                                }`}
-                        >
-                            <Image
-                                src={item.src}
-                                alt={item.alt}
-                                fill
-                                priority={index === currentIndex}
-                                className="object-contain rounded-2xl"
-                            />
-                        </div>
-                    ))}
-                </div>
-
-
-                {/* Dots */}
-                <div className="flex justify-center mt-8 gap-2">
-                    {testimonialImages.map((_, index) => (
-                        <button
-                            key={index}
-                            onClick={() => setCurrentIndex(index)}
-                            className={`h-3 w-3 rounded-full transition ${index === currentIndex
-                                ? "bg-blue-400 scale-110"
-                                : "bg-gray-300 hover:bg-gray-400"
-                                }`}
-                        />
-                    ))}
-                </div>
+              <div className="w-16 h-[3px] bg-blue-400 mx-auto mt-6 rounded-full" />
             </div>
-        </section>
-    );
+          </div>
+        </div>
+
+        {/* ===== CAROUSEL SECTION ===== */}
+        <Carousel
+          opts={{
+            align: "start",
+            loop: true,
+          }}
+          className="w-full"
+        >
+          <CarouselContent className="-ml-4">
+            {testimonialImages.map((item) => (
+              <CarouselItem
+                key={item.id}
+                className="pl-4 basis-full sm:basis-1/2 lg:basis-1/3"
+              >
+                <Card className="rounded-2xl overflow-hidden shadow-lg border bg-white">
+                  <CardContent className="relative h-[280px] sm:h-[320px] md:h-[360px] p-0">
+                    <Image
+                      src={item.src}
+                      alt={item.alt}
+                      fill
+                      className="object-contain p-6"
+                      sizes="(max-width: 768px) 100vw, 33vw"
+                    />
+                  </CardContent>
+                </Card>
+              </CarouselItem>
+            ))}
+          </CarouselContent>
+
+          {/* Navigation Arrows */}
+          <CarouselPrevious className="hidden sm:flex" />
+          <CarouselNext className="hidden sm:flex" />
+        </Carousel>
+      </div>
+    </section>
+  );
 }

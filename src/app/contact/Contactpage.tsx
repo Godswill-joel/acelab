@@ -69,7 +69,7 @@ export default function Page() {
         "service_90eyelb",
         "template_fwydtz4",
         { name, email, telephone, messenger, course },
-        "HC5l6FMRwWbUbXwuP"
+        "mmsmu4Hstun_vEhzQ"
       );
       console.log(result.text);
       setShowSuccess(true);
@@ -119,7 +119,7 @@ export default function Page() {
             <div className="space-y-10">
               <div className="space-y-8">
                 <div className="text-center lg:text-left">
-                  <h2 className="text-2xl sm:text-3xl font-bold uppercase tracking-wide text-[#2661E9] mb-3">
+                  <h2 className="text-2xl sm:text-3xl font-bold uppercase tracking-wide text-blue-400 mb-3">
                     Get In Touch
                   </h2>
                   <p className="text-gray-600 text-lg max-w-md">
@@ -146,7 +146,7 @@ export default function Page() {
 
               <div className="border-t border-gray-300/30 pt-10 space-y-8">
                 <div className="text-left lg:text-left">
-                  <h2 className="text-2xl sm:text-3xl font-bold uppercase tracking-wide text-[#2661E9] mb-6">
+                  <h2 className="text-2xl sm:text-3xl font-bold uppercase tracking-wide text-blue-400 mb-6">
                     Follow Our Journey
                   </h2>
                 </div>
@@ -155,7 +155,7 @@ export default function Page() {
                   {socials.map(({ id, text }) => (
                     <div
                       key={id}
-                      className="text-center  p-6 rounded-xl bg-white/80 backdrop-blur-sm border border-gray-200/50 shadow-sm hover:shadow-md transition-all duration-300"
+                      className="text-center p-6 rounded-xl bg-white/80 backdrop-blur-sm border border-gray-200/50 shadow-sm hover:shadow-md transition-all duration-300"
                     >
                       <p className="font-semibold text-gray-800 mb-4 text-sm uppercase tracking-wide">
                         {text}
@@ -221,7 +221,7 @@ export default function Page() {
                       name="course"
                       required
                       value={selectedCourse}
-                      onChange={(e) => setSelectedCourse(e.target.value)} // ✅ update state
+                      onChange={(e) => setSelectedCourse(e.target.value)} 
                       className="w-full px-4 py-3 rounded-xl bg-white border border-gray-300 text-gray-800 focus:outline-none focus:ring-2 focus:ring-[#2661E9]/50 focus:border-[#2661E9] transition-all duration-300"
                       disabled={loading}
                     >
@@ -273,7 +273,7 @@ export default function Page() {
 
           <div className="mt-20 lg:mt-24">
             <div className="text-center mb-10">
-              <h2 className="text-2xl sm:text-3xl font-bold uppercase tracking-wide text-[#2661E9] mb-3">
+              <h2 className="text-2xl sm:text-3xl font-bold uppercase tracking-wide text-blue-400  mb-3">
                 Find Our Office
               </h2>
               <p className="text-gray-600 max-w-2xl mx-auto">

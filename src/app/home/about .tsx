@@ -82,7 +82,7 @@ export default function About() {
                 <div className="absolute inset-0 opacity-0 group-hover:opacity-100 transition bg-gradient-to-br from-blue-500/10 to-transparent" />
 
                 {/* Icon */}
-                <div className="relative z-10 mb-6 flex h-14 w-14 items-center justify-center rounded-xl bg-blue-600/10 text-blue-600 group-hover:bg-blue-600 group-hover:text-white transition">
+                <div className="relative z-10 mb-6 flex h-14 w-14 items-center justify-center rounded-xl bg-blue-400/10 text-blue-400 group-hover:bg-blue-400 group-hover:text-white transition">
                   <Icon size={26} />
                 </div>
 

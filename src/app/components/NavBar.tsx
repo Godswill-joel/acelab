@@ -21,7 +21,6 @@ const navlinks = [
     ],
   },
   { name: "Contact", path: "/contact" },
-  { name: "Testimonial", path: "/testimonial" },
 ];
 
 export default function NavBar() {

@@ -3,7 +3,7 @@
 import Image from "next/image";
 import Automation from "../../../public/assets/images/automatiohero.png";
 import { useState } from "react";
-import { automationControl } from "../data/data";
+import { Troubleshooting } from "../data/data";
 
 export default function TroubleShootingControlSystem() {
   const [openTopic, setOpenTopic] = useState<string | null>(null);
@@ -30,7 +30,7 @@ export default function TroubleShootingControlSystem() {
           {/* Content */}
           <div className="relative z-10 h-full flex flex-col items-center justify-center text-center px-6">
             <h1 className="text-3xl sm:text-4xl md:text-6xl lg:text-7xl font-bold text-white mb-6 leading-tight">
-              PLC & SCADA Programming Series
+            Troubleshooting Industrial Control Systems
             </h1>
 
             <p className="text-gray-200 max-w-3xl text-base sm:text-lg md:text-xl leading-relaxed">
@@ -47,7 +47,7 @@ export default function TroubleShootingControlSystem() {
           <div className="absolute left-1/2 top-0 h-full w-[2px] bg-gray-200 hidden md:block" />
 
           <div className="space-y-12 sm:space-y-16 md:space-y-20">
-            {automationControl.map((topic, index) => {
+            {Troubleshooting.map((topic, index) => {
               const isLeft = index % 2 === 0;
               const isOpen = openTopic === topic.id;
 

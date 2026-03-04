@@ -156,9 +156,9 @@ export const marineCourseTopics: CourseTopic[] = [
       "Electrical power distribution boards and electrical equipment",
       "Fundamentals of automation, automatic control systems and technology",
       "Instrumentation, alarm and monitoring systems",
-     " Electrical drives",
-     "Technology of electrical material",
-     "Appreciation of hazards and precautions required for operation of power systems above 1,000 volts",
+      " Electrical drives",
+      "Technology of electrical material",
+      "Appreciation of hazards and precautions required for operation of power systems above 1,000 volts",
     ],
   },
   {
@@ -391,14 +391,103 @@ export type Topic = {
   outline: string[];
 };
 
-export const Troubleshooting: Topic [] = [
+export const Troubleshooting: Topic[] = [
   {
     id: "1",
     title: "Troubleshooting Electric Circuits",
     subtitle: "Troubleshooting Electrical Circuits",
-    description:"Electrical Circuits Users receive hands-on training on several electrical circuit simulations, covering key troubleshooting techniques, to prepare them to diagnose a variety of problems on the main lighting circuit simulation. These simulations contain common components including fuses, pushbuttons, switches, relays, and lights.",
-    outline:[
-
+    description: "Electrical Circuits Users receive hands-on training on several electrical circuit simulations, covering key troubleshooting techniques, to prepare them to diagnose a variety of problems on the main lighting circuit simulation. These simulations contain common components including fuses, pushbuttons, switches, relays, and lights.",
+    outline: [
+      "introduction",
+      "Troubleshooting safety",
+      "Troubleshooting techniques",
+      "Explore the lighting circuit",
+      "Troubleshoot the lighting circuit",
     ]
-  }
+  },
+  {
+    id: "2",
+    title: "Troubleshooting Control Circuits",
+    subtitle: "Troubleshooting Control Circuits",
+    description: "Control Circuits With two unique control circuit simulations, including an electric door lock simulation, users will encounter a range of malfunctions found in typical control circuits containing components including relays, transformers, switches, and solenoids.",
+    outline: [
+      "introduction",
+      "Troubleshooting safety",
+      "Finding control circuit faults",
+      "Explore the door lock circuit",
+      "Troubleshooting the door lock circuit",
+    ]
+  },
+  {
+    id: "3",
+    title: "Troubleshooting Motor Circuits",
+    subtitle: "Troubleshooting Motor Circuits",
+    description: "The multiple motor lab simulations and the industrial garage door simulation included in this module contain components such as three-phase motors, transformers, contactors, overloads, fuses, and limit switches. Users will troubleshoot three-phase power circuits along with the control portion of these motor circuits.",
+    outline: [
+      "Motor windings and connection",
+      "Motor behaviour",
+      "Motor control components",
+      "Determining causes of failure",
+      "The language of controls",
+      "Wiring diagram Vs ladder diagram",
+      "Ladder logic and basic rules",
+      "Solenoids",
+      "Electromechanical relay",
+      "Timer relay",
+      "AC motors",
+      "Sensing devices",
+      "Two-wire controls",
+      "Three-wire controls",
+      "Separate control circuit",
+      "Manual-Off-Auto control",
+      "Sequence control",
+      "Reverse control",
+      "Jogging control",
+      "Starting methods",
+      "Deceleration methods",
+      "Practice exercise",
+    ]
+  },
+  {
+    id: "4",
+    title: "Troubleshooting PLC Circuits 1",
+    subtitle: " PLC Circuits 1",
+    description: "This program includes several circuit simulations containing generic PLCs with digital inputs and outputs providing the basic functioning of PLCs and their circuits. Users gain experience while troubleshooting dozens of challenging malfunctions to build skills that matter.",
+    outline: [
+      "introduction",
+      "PLC overview",
+      "PLC components",
+      "PLC ladder diagrams",
+      "Diagnostic malfunction",
+      "Troubleshooting PLC circuits",
+    ]
+  },
+  {
+    id: "5",
+    title: "Troubleshooting Industrial Controls 1",
+    subtitle: "Troubleshooting Industrial Controls 1",
+    description: "Industrial Controls Users troubleshoot complex malfunctions on this realistic simulation of an industrial process for mixing and processing fluids. The system uses a three-phase, 480 volt supply and contains a variety of industrial components such as pumps, agitators, heaters, temperature and float switches, relays, and timers.",
+    outline: [
+      "introduction",
+      "PLC overview",
+      "PLC components",
+      "PLC ladder diagrams",
+      "Diagnostic malfunction",
+      "Troubleshooting PLC circuits",
+    ]
+  },
+  {
+    id: "6",
+    title: "Troubleshooting Industrial Controls 2",
+    subtitle: "Troubleshooting Industrial Controls 2",
+    description: "The PLC in this simulation has 20 PLC programs available providing a variety of different processes. Users will disconnect wires, take meter readings, even connect a laptop to compare readings and settings against schematics. Users will also examine pumps, motors, transformers, overloads and contactors to build skills while troubleshooting this complex industrial control system.",
+    outline: [
+      "introduction",
+      "PLC overview",
+      "PLC components",
+      "PLC ladder diagrams",
+      "Diagnostic malfunction",
+      "Troubleshooting PLC circuits",
+    ]
+  },
 ]

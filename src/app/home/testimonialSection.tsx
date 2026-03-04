@@ -2,8 +2,9 @@
 
 import { useEffect, useState } from "react";
 import Link from "next/link";
+import Image from "next/image";
 import TestimonialCard from "./testimonialcard";
-import { testimonials } from "../data/data";
+import { testimonialImages } from "../data/data";
 
 export default function TestimonialSection() {
   const [currentIndex, setCurrentIndex] = useState<number>(0);
@@ -11,7 +12,7 @@ export default function TestimonialSection() {
   useEffect(() => {
     const interval = setInterval(() => {
       setCurrentIndex((prev) =>
-        prev === testimonials.length - 1 ? 0 : prev + 1
+        prev === testimonialImages.length - 1 ? 0 : prev + 1
       );
     }, 5000);
 
@@ -39,25 +40,34 @@ export default function TestimonialSection() {
           </button>
         </div>
 
-        <div className="bg-white rounded-xl p-6 md:p-10 shadow-sm transition-all duration-500">
-          {testimonials.map((testimonial, index) => (
+        <div className="relative  flex items-center justify-center h-[280px]  mx-auto sm:h-[340px] md:h-[400px] lg:h-[500px]  overflow-hidden">
+          {testimonialImages.map((item, index) => (
             <div
-              key={testimonial.id}
-              className={`transition-opacity duration-700 ${index === currentIndex ? "opacity-100" : "opacity-0 hidden"
+              key={item.id}
+              className={`absolute inset-0 transition-opacity p-4 bg-white-500 duration-700 ease-in-out ${index === currentIndex ? "opacity-100" : "opacity-0"
                 }`}
             >
-              <TestimonialCard testimonial={testimonial} />
+              <Image
+                src={item.src}
+                alt={item.alt}
+                fill
+                priority={index === currentIndex}
+                className="object-contain rounded-2xl"
+              />
             </div>
           ))}
         </div>
+
+
+        {/* Dots */}
         <div className="flex justify-center mt-8 gap-2">
-          {testimonials.map((_, index) => (
+          {testimonialImages.map((_, index) => (
             <button
               key={index}
               onClick={() => setCurrentIndex(index)}
               className={`h-3 w-3 rounded-full transition ${index === currentIndex
-                  ? "bg-blue-400"
-                  : "bg-gray-300 hover:bg-gray-400"
+                ? "bg-blue-400 scale-110"
+                : "bg-gray-300 hover:bg-gray-400"
                 }`}
             />
           ))}

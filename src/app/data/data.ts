@@ -18,6 +18,17 @@ import Testimonial1 from "../../../public/assets/images/Testimonial1.png";
 import Testimonial2 from "../../../public/assets/images/Testimonial2.png";
 import Testimonial3 from "../../../public/assets/images/Testimonial3.png";
 import Testimonial4 from "../../../public/assets/images/Testimonial4.png";
+// import {
+//   FaEnvelope,
+//   FaPhone,
+//   FaWhatsapp,
+//   FaLocationDot,
+//   FaFacebookF,
+//   FaInstagram,
+//   FaLinkedinIn,
+//   FaSquareXTwitter,
+// } from "lucide-react";
+
 
 export interface Testimonial {
   id: number;
@@ -491,3 +502,65 @@ export const Troubleshooting: Topic[] = [
     ]
   },
 ]
+
+export const marineCourses = [
+  "Automation & Control Systems",
+  "Marine Electrical Engineering",
+  "Industrial Control System Troubleshooting",
+];
+
+// export const contactInfos = [
+//   {
+//     id: "email",
+//     icon: FaEnvelope,
+//     label: "Email",
+//     value: "training@acelabview.com",
+//   },
+//   {
+//     id: "phone",
+//     icon: FaPhone,
+//     label: "Phone",
+//     value: "09130058134",
+//   },
+//   {
+//     id: "whatsapp",
+//     icon: FaWhatsapp,
+//     label: "WhatsApp",
+//     value: "0803 880 3207",
+//   },
+//   {
+//     id: "address",
+//     icon: FaLocationDot,
+//     label: "Office Address",
+//     value:
+//       "No 2 Orji Close, Opposite Da'phantom Arena, Off Ada George Road, Port Harcourt",
+//   },
+// ];
+
+// export const contactInfo = [
+//   {
+//     id: "email",
+//     icon: FaEnvelope,
+//     label: "Email",
+//     value: "training@acelabview.com",
+//   },
+//   {
+//     id: "phone",
+//     icon: FaPhone,
+//     label: "Phone",
+//     value: "09130058134",
+//   },
+//   {
+//     id: "whatsapp",
+//     icon: FaWhatsapp,
+//     label: "WhatsApp",
+//     value: "0803 880 3207",
+//   },
+//   {
+//     id: "address",
+//     icon: FaLocationDot,
+//     label: "Office Address",
+//     value:
+//       "No 2 Orji Close, Opposite Da'phantom Arena, Off Ada George Road, Port Harcourt",
+//   },
+// ];

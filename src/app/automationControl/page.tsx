@@ -1,9 +1,10 @@
 "use client";
 
 import Image from "next/image";
-import Automation from "../../../public/assets/images/automatiohero.png";
+import Link from "next/link";
 import { useState } from "react";
 import { automationControl } from "../data/data";
+import Automation from "../../../public/assets/images/automatiohero.png";
 
 export default function AutomationControl() {
   const [openTopic, setOpenTopic] = useState<string | null>(null);
@@ -81,18 +82,29 @@ export default function AutomationControl() {
 
                     {/* Expandable Content */}
                     <div
-                      className={`mt-4 transition-all duration-500 overflow-hidden ${isOpen
-                        ? "max-h-[800px] opacity-100"
-                        : "max-h-0 opacity-0"
+                      className={`mt-4 transition-all duration-500 overflow-hidden ${isOpen ? "max-h-[1000px] opacity-100" : "max-h-0 opacity-0"
                         }`}
                     >
                       <h4 className="font-semibold text-gray-800 mb-2 text-sm sm:text-base">
                         {topic.subtitle}
                       </h4>
 
-                      <p className="text-gray-600 leading-relaxed whitespace-pre-line text-sm sm:text-base">
+                      <p className="text-gray-600 leading-relaxed whitespace-pre-line text-sm sm:text-base mb-6">
                         {topic.description}
                       </p>
+
+                      {/* CTA Button */}
+                      <Link
+                        href={{
+                          pathname: "/contact",
+                          query: { course: topic.title },
+                        }}
+                        className="inline-block bg-blue-600 hover:bg-blue-700 text-white 
+               text-sm sm:text-base font-medium px-6 py-3 
+               rounded-lg transition duration-300"
+                      >
+                        Enroll in This Course
+                      </Link>
                     </div>
                   </div>
                 </div>

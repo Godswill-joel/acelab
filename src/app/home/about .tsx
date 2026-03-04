@@ -53,7 +53,7 @@ export default function About() {
         {/* Header */}
         <div className="text-center mb-16">
           <h2 className="text-3xl md:text-5xl font-extrabold text-slate-900">
-            About Acelabview
+            About Acelab Academy
           </h2>
           <p className="mt-5 text-slate-600 max-w-2xl mx-auto text-base md:text-lg">
             Empowering the marine industry with world-class engineering

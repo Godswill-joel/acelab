@@ -33,7 +33,7 @@ export default function AboutPage() {
                         transition={{ duration: 1.2, ease: "easeOut", repeat: Infinity, repeatDelay: 4 }}
                         className="text-4xl md:text-8xl font-bold text-blue-400 text-center"
                     >
-                        About River
+                        About <span className="text-white">Acelab</span> Academy
                     </motion.h1>
                 </div>
             </div>

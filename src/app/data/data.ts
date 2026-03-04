@@ -150,10 +150,15 @@ export const marineCourseTopics: CourseTopic[] = [
     title: "Electrical,Electronic & Control Engineering at Operational Level",
     description: "At the end of the course, you are expected to demonstrate knowledge, have a detailed understanding and proficiency in the following:",
     outline: [
-      "Overview of marine electrical architecture",
-      "AC vs DC systems on vessels",
-      "Basic electrical safety onboard",
-      "Marine electrical standards & compliance",
+      "Basic knowledge of heat transmission, mechanics and hydromechanics",
+      "Electro-technology and electrical machines theory",
+      "Fundamentals of electronics and power electronics",
+      "Electrical power distribution boards and electrical equipment",
+      "Fundamentals of automation, automatic control systems and technology",
+      "Instrumentation, alarm and monitoring systems",
+     " Electrical drives",
+     "Technology of electrical material",
+     "Appreciation of hazards and precautions required for operation of power systems above 1,000 volts",
     ],
   },
   {
@@ -161,10 +166,22 @@ export const marineCourseTopics: CourseTopic[] = [
     title: "Monitor the Operation of Automatic Control Systems of Propulsion & Auxilliary Machinery",
     description: "At the end of the course, you are expected to demonstrate knowledge, have a detailed understanding and proficiency in the following:",
     outline: [
-      "Generators and alternators",
-      "Switchboards and distribution panels",
-      "Load sharing and power management",
-      "Emergency power systems",
+      "PROPULSION CONTROL SYSTEMS",
+      "Function of control systems of the main propulsion and auxiliary machinery",
+      "sketch of block diagrams of main propulsion control of the main propulsion control systems",
+      "Main propulsion controls systems used in normal and emergency situations",
+      " Basic principles of propulsion control changeover in emergency",
+      "Safety systems: start, shut-down and slow-down.",
+      "Speed control and reversing systems of main engine with fixed and variable pitch propeller",
+      "AUXILIARY MACHINERY CONTROL SYSTEMS",
+      "Air compressors",
+      "Auxiliary boilers; steering gear; fuel oil, cooling and lubricating oil systems",
+      " Fuel temperature and viscosity control",
+      "Boiler",
+      "Sequential re-starting for auxiliary machinery",
+      " Cut-in arrangements for auxiliary of unnamed machinery space",
+      "Provision and cargo refrigeration plant",
+      "Air conditioning plant",
     ],
   },
   {
@@ -172,10 +189,16 @@ export const marineCourseTopics: CourseTopic[] = [
     title: "Fundamentals of electronics and Power Electronics ",
     description: "At the end of the course, you are expected to demonstrate knowledge, have a detailed understanding and proficiency in the following:",
     outline: [
-      "Star-delta starters",
-      "Soft starters",
-      "Variable Frequency Drives (VFDs)",
-      "Marine motor protection methods",
+      "know the structure, principle of operation, parameters and application of different semiconductor elements: diodes, SCR, GTO and IGBT thyristors, field effect transistors – MOSFET and JFET, IGBT transistors",
+      "Presents classification of power electronic converters and areas of their application on ships",
+      "knows parameters, properties and basic applications of integrated stabilizers and operational amplifiers",
+      "Gives example and describes structure and operation of analogue and impulse DC power supplies",
+      " Lists and describes the construction and operation of controlled rectifiers",
+      "Describe the construction and operation of AC voltage controllers",
+      "Describe principle of operation and properties of MSI inverters",
+      " Describes principle of operation and properties of cyclo-converters",
+      "know diagnostics, methods of assembly and replacement of semiconductor elements",
+      "List the requirements for electronic and power electronic systems installed on ships",
     ],
   },
   {
@@ -183,10 +206,10 @@ export const marineCourseTopics: CourseTopic[] = [
     title: "Operation & Maintenance of Power Systems in Excess of 1,000 Volts",
     description: "At the end of the course, you are expected to demonstrate knowledge, have a detailed understanding and proficiency in the following:",
     outline: [
-      "Radar and GPS systems",
-      "ECDIS overview",
-      "Internal communication systems",
-      "Troubleshooting nav electronics",
+      "High voltage technology",
+      "Safety precautions and technology",
+      "Electrical propulsion of ships, electrical motors and control systems",
+      "Safe operation and maintenance of high-voltage systems",
     ],
   },
   {
@@ -194,10 +217,9 @@ export const marineCourseTopics: CourseTopic[] = [
     title: "Computer Operation & Networks on Ship",
     description: "At the end of the course, you are expected to demonstrate knowledge, have a detailed understanding and proficiency in the following:",
     outline: [
-      "PLC basics for marine applications",
-      "Sensor & actuator integration",
-      "Alarm & monitoring systems",
-      "Basic fault diagnostics",
+      "Key features of data processing.",
+      "Construction and use of computer networks on ships.",
+      "Bridge based, engine room based and commercial computer use."
     ],
   },
   {
@@ -205,10 +227,11 @@ export const marineCourseTopics: CourseTopic[] = [
     title: "Operation of All Internal Communication Systems on Board",
     description: "At the end of the course, you are expected to demonstrate knowledge, have a detailed understanding and proficiency in the following:",
     outline: [
-      "Fault-finding techniques",
-      "Insulation testing",
-      "Preventive maintenance schedules",
-      "Real-world case studies",
+      "Automatic Telephone System",
+      "Emergency Sound Powered Telephone System",
+      "Talkback – Intercom System",
+      "Public Address System (PA)",
+      "Communication between personnel and relaying of messages",
     ],
   },
   {
@@ -216,10 +239,12 @@ export const marineCourseTopics: CourseTopic[] = [
     title: "Maintenance & Repair of Electrical & Electronic Equipment",
     description: "At the end of the course, you are expected to demonstrate knowledge, have a detailed understanding and proficiency in the following:",
     outline: [
-      "Fault-finding techniques",
-      "Insulation testing",
-      "Preventive maintenance schedules",
-      "Real-world case studies",
+      "Safety requirements for working on shipboard electrical equipment",
+      "Maintenance and repair of electrical system equipment, switchboards, electric motors, generators and dc electrical systems and equipment",
+      "Detection of electric malfunction, location of faults and measures to prevent damage",
+      "Construction and operation of electrical testing and measuring equipment",
+      "Function, configuration and performance tests of monitoring systems, automatic control devices, protective devices",
+      "The interpretation of electrical and electronic diagrams",
     ],
   },
   {
@@ -227,10 +252,18 @@ export const marineCourseTopics: CourseTopic[] = [
     title: "Maintenance/Repair of Automation & Control Systems of Main Propulsion & Auxilliary Machinery",
     description: "At the end of the course, you are expected to demonstrate knowledge, have a detailed understanding and proficiency in the following:",
     outline: [
-      "Fault-finding techniques",
-      "Insulation testing",
-      "Preventive maintenance schedules",
-      "Real-world case studies",
+      "Maintenance procedures and repair of electrical, mechanical, pneumatic, hydraulic components and automation equipment of main propulsion and auxiliary machinery",
+      "Maintenance and repair of PID controllers",
+      " Maintenance and repair of actuators",
+      "Principle of controller optimal settings according to Ziegler-Nichols rule and manual adjustment of controller according to observed control errors",
+      "Principles of maintenance and repair of propulsion remote control systems",
+      "Maintenance procedures and repair of main propulsion with reference to",
+      "Maintenance procedures and repair of fuel temperature and viscosity automatic control system",
+      "Maintenance procedures and repair of lubrication, fuel and cooling automatic control systems",
+      " Maintenance procedures and repair of variable pitch propeller control system",
+      "Maintenance procedures and repair of ship refrigeration plans control systems: provision, refrigerated cargo holds and containers, air condition",
+      "Maintenance and repair of the following engine auxiliary control systems: oil and fuel separator, sewage treatment plant, evaporator and osmotic fresh water generators, incinerators",
+      "Maintenance procedures and repair of steering gear control system",
     ],
   },
   {
@@ -238,10 +271,16 @@ export const marineCourseTopics: CourseTopic[] = [
     title: "Maintenance/Repair of Bridge Navigation equipment & Ship Communication Systems",
     description: "At the end of the course, you are expected to demonstrate knowledge, have a detailed understanding and proficiency in the following:",
     outline: [
-      "Fault-finding techniques",
-      "Insulation testing",
-      "Preventive maintenance schedules",
-      "Real-world case studies",
+      "Maintenance And Repair Of Bridge Navigation Equipment",
+      "Radar",
+      "Global Navigation Satellite Systems",
+      "Ship Compass Equipment",
+      "Speed Logs",
+      "Echo Sounder Systems",
+      "Marine Autopilots",
+      "Voyage Data Recorders, Navigation Lights, Search Lights, Ship Horns And Sound Signal Systems, Wind Trackers",
+      "Maintenance And Repair Of Ship Communication Systems",
+      "Ship Communication Systems",
     ],
   },
   {
@@ -249,10 +288,10 @@ export const marineCourseTopics: CourseTopic[] = [
     title: "Maintenance & Repair of Electrical, Electronic & Control Systems of Deck Machinery & Cargo Handling Equipment",
     description: "At the end of the course, you are expected to demonstrate knowledge, have a detailed understanding and proficiency in the following:",
     outline: [
-      "Fault-finding techniques",
-      "Insulation testing",
-      "Preventive maintenance schedules",
-      "Real-world case studies",
+      "Maintenance and repair Of Electrical, Electronic and Control Systems of Deck Machinery Systems",
+      "Maintenance and Repair of Electrical, Electronic and Control Systems of Cargo-Handling Equipment",
+      "Electrical and Electronic Systems Operating in Flammable Areas",
+      "Safety and Emergency Procedures",
     ],
   },
   {
@@ -260,10 +299,11 @@ export const marineCourseTopics: CourseTopic[] = [
     title: "Maintenance/Repair of Control & Safety Systems of Hotel Equipment",
     description: "At the end of the course, you are expected to demonstrate knowledge, have a detailed understanding and proficiency in the following:",
     outline: [
-      "Fault-finding techniques",
-      "Insulation testing",
-      "Preventive maintenance schedules",
-      "Real-world case studies",
+      " Operation of ship elevators",
+      "Galley Equipment",
+      "Laundry equipment",
+      "Hotel safety and alarm system",
+      "Hotel lighting systems",
     ],
   },
   {
@@ -271,10 +311,12 @@ export const marineCourseTopics: CourseTopic[] = [
     title: " Troubleshooting Bridge Equipment & Engine Room Control Systems",
     description: "At the end of the course, you are expected to demonstrate knowledge, have a detailed understanding and proficiency in the following:",
     outline: [
-      "Fault-finding techniques",
-      "Insulation testing",
-      "Preventive maintenance schedules",
-      "Real-world case studies",
+      "Woodward EasYgen Controller (100,1000,2000,3000,3200 series)",
+      "Balser Digital Excitation Controller",
+      "Hyperterminal Software",
+      "MRC Software",
+      "DEIF Controllers Software",
+      "Device Net",
     ],
   },
 ];
@@ -340,3 +382,23 @@ Throughout the course, you’ll have access to CitectSCADA and Simulator for you
 At the end of the course, you are expected to have a detailed understanding of how to create your own SCADA screens and projects from scratch to Industrial Standards, as well as understanding the fundamentals to SCADA design from how to setup a project to developing your own dynamic screens which react to Tags from PLCs displaying real-time processes and applications to Operators and Engineers on the shop-floor.`,
   },
 ];
+
+export type Topic = {
+  id: string;
+  title: string;
+  subtitle: string;
+  description: string;
+  outline: string[];
+};
+
+export const Troubleshooting: Topic [] = [
+  {
+    id: "1",
+    title: "Troubleshooting Electric Circuits",
+    subtitle: "Troubleshooting Electrical Circuits",
+    description:"Electrical Circuits Users receive hands-on training on several electrical circuit simulations, covering key troubleshooting techniques, to prepare them to diagnose a variety of problems on the main lighting circuit simulation. These simulations contain common components including fuses, pushbuttons, switches, relays, and lights.",
+    outline:[
+
+    ]
+  }
+]

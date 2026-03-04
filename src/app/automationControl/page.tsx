@@ -2,6 +2,8 @@
 
 import Image from "next/image";
 import Link from "next/link";
+import { motion } from "framer-motion";
+import Hero4 from "../../../public/assets/images/hero4.jpg";
 import { useState } from "react";
 import { automationControl } from "../data/data";
 import Automation from "../../../public/assets/images/automatiohero.png";
@@ -15,11 +17,11 @@ export default function AutomationControl() {
 
   return (
     <section className="bg-white py-16 sm:py-20 md:py-24 px-4 sm:px-6 md:px-10">
-      <div className="max-w-8xl mx-auto">
-        <div className="relative mb-12 h-[65vh] sm:h-[75vh] md:h-[85vh] w-full overflow-hidden">
+      <div className="max-w-7xl mx-auto">
+        <div className="relative h-[70vh] md:h-[85vh] w-full mb-12 overflow-hidden">
           <Image
             src={Automation}
-            alt="PLC & SCADA Programming"
+            alt="Marine Electrical Training"
             fill
             priority
             className="object-cover"
@@ -29,10 +31,24 @@ export default function AutomationControl() {
           <div className="absolute inset-0 bg-black/60" />
 
           {/* Content */}
-          <div className="relative z-10 h-full flex flex-col items-center justify-center text-center px-6">
-            <h1 className="text-3xl sm:text-4xl md:text-6xl lg:text-7xl font-bold text-blue-400 mb-6 leading-tight">
-              PLC & SCADA <span className="text-white">Programming</span> Series
-            </h1>
+          <div className="relative z-10 h-full flex items-center justify-center px-6">
+            <motion.h1
+              initial={{ y: -30, opacity: 0 }}
+              animate={{ y: [0, -10, 0], opacity: 1 }}
+              transition={{
+                duration: 1.2,
+                ease: "easeOut",
+                repeat: Infinity,
+                repeatDelay: 4,
+              }}
+              className="text-4xl sm:text-5xl md:text-7xl lg:text-8xl font-bold text-blue-400 text-center leading-tight"
+            >
+              PLC & SCADA{" "}
+              <span className="text-white">
+                Programming
+              </span>{" "}
+              Series
+            </motion.h1>
           </div>
         </div>
         <div className="relative">

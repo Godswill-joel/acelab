@@ -18,16 +18,7 @@ import Testimonial1 from "../../../public/assets/images/Testimonial1.png";
 import Testimonial2 from "../../../public/assets/images/Testimonial2.png";
 import Testimonial3 from "../../../public/assets/images/Testimonial3.png";
 import Testimonial4 from "../../../public/assets/images/Testimonial4.png";
-// import {
-//   FaEnvelope,
-//   FaPhone,
-//   FaWhatsapp,
-//   FaLocationDot,
-//   FaFacebookF,
-//   FaInstagram,
-//   FaLinkedinIn,
-//   FaSquareXTwitter,
-// } from "lucide-react";
+
 
 
 export interface Testimonial {
@@ -504,9 +495,33 @@ export const Troubleshooting: Topic[] = [
 ]
 
 export const marineCourses = [
-  "Automation & Control Systems",
+  "Automation Control",
   "Marine Electrical Engineering",
   "Industrial Control System Troubleshooting",
+  "Troubleshooting PLC Circuits 1",
+  "Troubleshooting Industrial Controls 1",
+  "Troubleshooting Industrial Controls 2",
+  "Troubleshooting Electric Circuits",
+  "Troubleshooting Control Circuits",
+  "Troubleshooting Motor Circuits",
+  "PLC Programming Series (For Beginners)",
+  "Siemens S7 & TIA Portal Programming Series",
+  "Siemens S7 & STEP7 Programming Series",
+  "Allen Bradley RSLogixStudio 5000 Programming",
+  "SCADA Programming Series",
+  "Electrical,Electronic & Control Engineering at Operational Level",
+  "Monitor the Operation of Automatic Control Systems of Propulsion & Auxilliary Machinery",
+  "Fundamentals of electronics and Power Electronics ",
+  "Operation & Maintenance of Power Systems in Excess of 1,000 Volts",
+  "Computer Operation & Networks on Ship",
+  "Operation of All Internal Communication Systems on Board",
+  "Maintenance & Repair of Electrical & Electronic Equipment",
+  "Maintenance/Repair of Automation & Control Systems of Main Propulsion & Auxilliary Machinery",
+  "Maintenance/Repair of Bridge Navigation equipment & Ship Communication Systems",
+  "Maintenance & Repair of Electrical, Electronic & Control Systems of Deck Machinery & Cargo Handling Equipment",
+  "Maintenance/Repair of Control & Safety Systems of Hotel Equipment",
+  "Troubleshooting Bridge Equipment & Engine Room Control Systems",
+
 ];
 
 

@@ -3,6 +3,7 @@
 import { useState } from "react";
 import Image from "next/image";
 import Link from "next/link";
+import { motion } from "framer-motion";
 import Hero4 from "../../../public/assets/images/hero4.jpg";
 import { marineCourseTopics } from "../data/data";
 
@@ -15,23 +16,39 @@ export default function MarineElectricalTraining() {
 
   return (
     <section className="bg-white py-16 sm:py-20 md:py-24 lg:py-28 px-4 sm:px-6 md:px-10">
-      <div className="max-w-8xl mx-auto">
+      <div className="max-w-7xl mx-auto">
         {/* Hero Section */}
-        <div className="relative mb-12 h-[65vh] sm:h-[75vh] md:h-[85vh] w-full overflow-hidden rounded-2xl shadow-lg">
+        <div className="relative h-[70vh] md:h-[85vh] w-full mb-12 overflow-hidden">
           <Image
             src={Hero4}
             alt="Marine Electrical Training"
             fill
             priority
-            className="object-cover rounded-2xl"
+            className="object-cover"
           />
 
+          {/* Overlay */}
           <div className="absolute inset-0 bg-black/60" />
 
-          <div className="relative z-10 flex flex-col items-center justify-center text-center px-6 sm:px-10 md:px-16 py-16 sm:py-20 md:py-24 lg:py-28">
-            <h2 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-extrabold mb-6 leading-snug text-blue-400">
-              Marine <span className="text-white">Electrical Engineering</span> Training
-            </h2>
+          {/* Content */}
+          <div className="relative z-10 h-full flex items-center justify-center px-6">
+            <motion.h1
+              initial={{ y: -30, opacity: 0 }}
+              animate={{ y: [0, -10, 0], opacity: 1 }}
+              transition={{
+                duration: 1.2,
+                ease: "easeOut",
+                repeat: Infinity,
+                repeatDelay: 4,
+              }}
+              className="text-4xl sm:text-5xl md:text-7xl lg:text-8xl font-bold text-blue-400 text-center leading-tight"
+            >
+              Marine{" "}
+              <span className="text-white">
+                Electrical Engineering
+              </span>{" "}
+              Training
+            </motion.h1>
           </div>
         </div>
 

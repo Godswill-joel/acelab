@@ -495,20 +495,20 @@ export const Troubleshooting: Topic[] = [
 ]
 
 export const marineCourses = [
-  "Automation Control",
-  "Marine Electrical Engineering",
-  "Industrial Control System Troubleshooting",
+  "TROUBLESHOOTING INDUSTRIAL CONTROL SYSTEM",
   "Troubleshooting PLC Circuits 1",
   "Troubleshooting Industrial Controls 1",
   "Troubleshooting Industrial Controls 2",
   "Troubleshooting Electric Circuits",
   "Troubleshooting Control Circuits",
   "Troubleshooting Motor Circuits",
+  "AUTOMATION CONTROL SYSTEM",
   "PLC Programming Series (For Beginners)",
   "Siemens S7 & TIA Portal Programming Series",
   "Siemens S7 & STEP7 Programming Series",
   "Allen Bradley RSLogixStudio 5000 Programming",
   "SCADA Programming Series",
+  "MARINE ELECTRICAL ENGINEERING",
   "Electrical,Electronic & Control Engineering at Operational Level",
   "Monitor the Operation of Automatic Control Systems of Propulsion & Auxilliary Machinery",
   "Fundamentals of electronics and Power Electronics ",
@@ -524,59 +524,3 @@ export const marineCourses = [
 
 ];
 
-
-// export const contactInfos = [
-//   {
-//     id: "email",
-//     icon: FaEnvelope,
-//     label: "Email",
-//     value: "training@acelabview.com",
-//   },
-//   {
-//     id: "phone",
-//     icon: FaPhone,
-//     label: "Phone",
-//     value: "09130058134",
-//   },
-//   {
-//     id: "whatsapp",
-//     icon: FaWhatsapp,
-//     label: "WhatsApp",
-//     value: "0803 880 3207",
-//   },
-//   {
-//     id: "address",
-//     icon: FaLocationDot,
-//     label: "Office Address",
-//     value:
-//       "No 2 Orji Close, Opposite Da'phantom Arena, Off Ada George Road, Port Harcourt",
-//   },
-// ];
-
-// export const contactInfo = [
-//   {
-//     id: "email",
-//     icon: FaEnvelope,
-//     label: "Email",
-//     value: "training@acelabview.com",
-//   },
-//   {
-//     id: "phone",
-//     icon: FaPhone,
-//     label: "Phone",
-//     value: "09130058134",
-//   },
-//   {
-//     id: "whatsapp",
-//     icon: FaWhatsapp,
-//     label: "WhatsApp",
-//     value: "0803 880 3207",
-//   },
-//   {
-//     id: "address",
-//     icon: FaLocationDot,
-//     label: "Office Address",
-//     value:
-//       "No 2 Orji Close, Opposite Da'phantom Arena, Off Ada George Road, Port Harcourt",
-//   },
-// ];
